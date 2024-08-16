@@ -7,5 +7,6 @@
    Then print the respective minimum and maximum values as a single line of two space-separated long integers.
 
 3. Given a time in -hour AM/PM format, convert it to military (24-hour) time.
+4. Given an array of integers, where all elements but one occur twice, find the unique element.
 
 
