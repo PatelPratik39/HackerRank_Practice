@@ -17,7 +17,7 @@ public class MinMaxSum {
         }
 //        find MaxSum
         long maxSum = 0;
-        for(int i = 0; i< 5; i++){
+        for(int i = 1; i< 5; i++){
             maxSum += arr[i];
         }
         System.out.println(minSum + " " + maxSum);
