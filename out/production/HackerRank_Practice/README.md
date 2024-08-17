@@ -6,7 +6,8 @@
 2. Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers.
    Then print the respective minimum and maximum values as a single line of two space-separated long integers.
 
-3. Given a time in -hour AM/PM format, convert it to military (24-hour) time.
+3. Given a time in-hour AM/PM format, convert it to military (24-hour) time.
 4. Given an array of integers, where all elements but one occur twice, find the unique element.
+5. Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 
 
