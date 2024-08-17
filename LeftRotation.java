@@ -21,10 +21,10 @@ import java.util.List;
  *
  * int[n]: the rotated array
  */
-public class LeftRotation {
-
-    private static void rotatedArray ( List<Integer> arr , int d) {
-        int n = arr.size();
+//public class LeftRotation {
+//
+//    private static void rotatedArray ( List<Integer> arr , int d) {
+//        int n = arr.size();
 //        for(int i=0; i < d; i++){
 //            int temp = arr[0];
 //            for (int j = 0; j < n-1; j++){
@@ -32,22 +32,31 @@ public class LeftRotation {
 //            }
 //            arr[n-1] = temp;
 //        }
+     import java.util.*;
 
-        List <Integer> rotatedArray = new ArrayList <>(arr.subList(d,n));
-        rotatedArray.addAll(arr.subList(0,d));
-    }
+        public class LeftRotation {
 
-    public static void main ( String[] args ) {
+            private static List<Integer> rotatedArray(List<Integer> arr, int d) {
+                int n = arr.size();
 
+                // Create the rotated array using slicing and concatenation
+                List<Integer> rotatedArray = new ArrayList<>(arr.subList(d, n));
+                rotatedArray.addAll(arr.subList(0, d));
 
-        int d = 2;
-        List<Integer> list = new ArrayList <>();
-        int list = {1,2,3,4,5};
-        rotatedArray(List<Integer> arr, d);
+                return rotatedArray;
+            }
 
-        for(int i : arr){
-            System.out.print(i + " ");
+            public static void main(String[] args) {
+
+                int d = 2;
+                List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+
+                // Call the rotation method and get the result
+                List<Integer> rotatedList = rotatedArray(list, d);
+
+                // Print the rotated list
+                for (int i : rotatedList) {
+                    System.out.print(i + " ");
+                }
+            }
         }
-
-    }
-}
