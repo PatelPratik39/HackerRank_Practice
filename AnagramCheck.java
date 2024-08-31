@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -41,18 +42,14 @@ public class AnagramCheck {
             return false;
         }
 //        frequency check of the strings
-        int[] frequency = new int[26];
+        int[] frequency1 = new int[26];
+        int[] frequency2 = new int[26];
 
         for(int i = 0; i < str1.length(); i++){
-            frequency[str1.charAt(i) - 'a']++;
-            frequency[str2.charAt(i) - 'a']--;
+            frequency1[str1.charAt(i) - 'a']++;
+            frequency2[str2.charAt(i) - 'a']++;
         }
-        for(int i = 0; i < 26; i++){
-            if(frequency[i] != 0){
-                return false;
-            }
-        }
-        return true;
+        return Arrays.equals(frequency1,frequency2);
 
     }
     public static void main ( String[] args ) {
